@@ -304,7 +304,7 @@ This project combines several state-of-the-art research works:
 - Based on Gatys et al. "A Neural Algorithm of Artistic Style"
 - Uses VGG19 for feature extraction and style transfer
 
-## 👥 Team
+## Team
 1. Mayank Jangid
 2. Abhinav Rajput
 3. Odwitiyo
