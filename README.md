@@ -334,7 +334,7 @@ This project combines several state-of-the-art research works:
 ## 🤝 Related Projects
 
 - **[PL-VTON](https://github.com/xyhanHIT/PL-VTON)** - Progressive Limb-Aware Virtual Try-On
-- **[GP-VTON](https://github.com/xiezhy6/GP-VTON)** - Garment-Person Virtual Try-On  
+- **[GP-VTON](https://github.com/xiezhy6/GP-VTON)** - Garment-Person Virtual Try-On 
 - **[DCI-VTON](https://github.com/bcmi/DCI-VTON-Virtual-Try-On)** - Disentangled Cycle-consistent Virtual Try-On
 
 ## 🐛 Troubleshooting
@@ -357,7 +357,7 @@ This project combines several state-of-the-art research works:
 - Ensure TensorFlow is using GPU acceleration
 
 #### Color Analysis Fails
-- Check face visibility in uploaded photos  
+- Check face visibility in uploaded photos 
 - Ensure good lighting conditions
 - Verify ResNet model file exists
 
@@ -368,38 +368,12 @@ This project combines several state-of-the-art research works:
 4. Check file permissions and paths
 5. Review the troubleshooting sections in individual component READMEs
 
-## 📄 License
+## 👥 Team
+1. Mayank Jangid
+2. Abhinav Rajput
+3. Odwitiyo
 
-This project incorporates multiple research works and libraries. Please refer to individual component licenses:
 
-- SCW-VTON: Research use only
-- FashionCLIP: MIT License  
-- Neural Style Transfer: Open source implementation
-- OpenPose: Academic license required for commercial use
-- DensePose: Facebook Research license
-
-## 🔮 Future Enhancements
-
-- [ ] Real-time virtual try-on with webcam input
-- [ ] 3D clothing visualization and manipulation
-- [ ] Multi-person fashion coordination
-- [ ] Augmented reality integration
-- [ ] E-commerce platform integration
-- [ ] Mobile application development
-- [ ] Advanced fabric texture synthesis
-- [ ] Seasonal trend prediction
-- [ ] Social sharing and community features
-- [ ] API development for third-party integration
-
-## 👥 Team & Acknowledgments
-
-This project was developed as part of the AIMS Summer Project on Fashion AI. Special thanks to:
-
-- Original SCW-VTON authors for the virtual try-on implementation
-- FashionCLIP developers for the fashion-specific CLIP model
-- OpenPose and DensePose teams for pose estimation frameworks
-- Streamlit team for the excellent web framework
 
 ---
 
-**🚀 Ready to transform fashion with AI? Get started with the quick setup guide above!**
