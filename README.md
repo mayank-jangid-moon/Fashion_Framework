@@ -281,7 +281,7 @@ Fashion_Shit/
 └── Dataset/                # Training/test data
 ```
 
-## 📚 Research & Citations
+## Research & Citations
 
 This project combines several state-of-the-art research works:
 
