@@ -1,0 +1,414 @@
+# Fashion AI System - .gitignore
+
+# =============================================================================
+# Python
+# =============================================================================
+*.gitignore
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# =============================================================================
+# Model Weights & Checkpoints (EXCLUDE FROM REPO)
+# =============================================================================
+
+# PyTorch model files
+*.pth
+*.pt
+*.pkl
+*.pickle
+
+# TensorFlow model files
+*.pb
+*.h5
+*.hdf5
+saved_model/
+model.ckpt*
+checkpoint
+
+# ONNX models
+*.onnx
+
+# Hugging Face models
+pytorch_model.bin
+tf_model.h5
+model.safetensors
+
+# SCW-VTON model checkpoints
+SCW-VTON/ckpts/
+SCW-VTON/models/vgg/*.pth
+SCW-VTON/models/vgg/*.pkl
+
+# Color Analysis models
+Colour_Analysis/facer/*.pth
+Colour_Analysis/facer/cp/
+Colour_Analysis/facer/models/
+
+# DensePose models
+Preprocessing/densepose/models/
+Preprocessing/densepose/*.pth
+Preprocessing/densepose/*.pkl
+
+# OpenPose models
+Preprocessing/openpose/models/
+Preprocessing/openpose/*.caffemodel
+
+# Image parsing models
+Preprocessing/image_parse/checkpoint/
+Preprocessing/image_parse/*.pth
+Preprocessing/image_parse/*.pkl
+
+# General model directories
+models/
+checkpoints/
+weights/
+pretrained/
+
+# =============================================================================
+# Datasets & Large Data Files (EXCLUDE FROM REPO)  
+# =============================================================================
+
+# Fashion datasets
+Dataset/
+data/
+dataset/
+datasets/
+
+# Compressed datasets
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Image datasets (exclude most image files, but allow some exceptions below)
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.webp
+*.gif
+
+# Video datasets
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+
+# Annotation files (large)
+# *.json  # Commented out - we need some JSON files
+*.xml
+# *.txt  # Commented out - we need some text files
+!requirements.txt
+!README*.txt
+!**/test_pairs.txt
+!**/train_pairs.txt
+
+# FAISS indices
+*.index
+*.faiss
+
+# Database files
+Recommender/Database/
+*.db
+*.sqlite
+*.sqlite3
+
+# Large numpy arrays
+*.npy
+*.npz
+
+# =============================================================================
+# Temporary & Cache Files
+# =============================================================================
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*~
+
+# Log files
+*.log
+logs/
+log/
+
+# Cache directories
+cache/
+.cache/
+
+# =============================================================================
+# Development & Editor Files
+# =============================================================================
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# Output & Results Directories
+# =============================================================================
+
+# Generated outputs
+output/
+outputs/
+results/
+generated/
+preprocessed/
+processed/
+
+# Streamlit specific
+.streamlit/secrets.toml
+
+# Test outputs
+test_output/
+test_results/
+
+# Style transfer outputs
+stylized/
+stylized-images/
+
+# Virtual try-on outputs
+try_on_results/
+warped_cloth/
+try_on/
+
+# =============================================================================
+# Configuration & Secrets
+# =============================================================================
+
+# API keys and secrets
+.env
+.env.local
+.env.production
+.env.staging
+secrets.yaml
+secrets.json
+config.yaml
+config.json
+
+# Personal configurations
+personal_config.py
+local_settings.py
+
+# =============================================================================
+# System & Runtime Files
+# =============================================================================
+
+# CUDA cache
+**/.nv_cache/
+
+# Conda environments (if stored locally)
+envs/
+miniconda/
+anaconda/
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# =============================================================================
+# Backup Files
+# =============================================================================
+*.bak
+*.backup
+*.old
+*.orig
+
+# =============================================================================
+# Documentation Build Files
+# =============================================================================
+docs/_build/
+doc/_build/
+
+# =============================================================================
+# SPECIFIC PROJECT EXCLUSIONS
+# =============================================================================
+
+# Exclude large third-party repositories (if cloned locally)
+SCW-VTON/src/taming-transformers/
+Preprocessing/openpose/3rdparty/
+
+# =============================================================================
+# ALLOW ESSENTIAL FILES (Override exclusions above)
+# =============================================================================
+
+# Keep configuration files
+!*.yaml
+!*.yml
+!*.toml
+!*.ini
+!*.cfg
+!config.py
+
+# Keep essential JSON files
+!*.json
+!SCW-VTON/configs/*.json
+!Recommender/FashionCLIP/*.json
+!Streamlit/.streamlit/config.toml
+
+# Keep setup and requirement files
+!requirements.txt
+!**/requirements.txt
+!**/requirements.pip
+!**/environment.txt
+!setup_*.sh
+!environment.sh
+!install_*.sh
+!start_*.sh
+!test.sh
+
+# Keep documentation
+!README*.md
+!**/*.md
+!LICENSE*
+!COPYING*
+
+# Keep source code
+!*.py
+!*.js
+!*.css
+!*.html
+!*.sh
+!*.bat
+!*.ps1
+
+# Keep small essential images (demo/example purposes - add specific ones as needed)
+!demo_images/
+!sample_images/
+!examples/
+# But exclude their actual image contents
+demo_images/*.jpg
+sample_images/*.jpg
+examples/*.jpg
+demo_images/*.png
+sample_images/*.png
+examples/*.png
+
+# Keep test/configuration images that are small
+!Preprocessing/image_parse/00008_00.jpg
+
+# Version control
+!.gitignore
+!.gitattributes
