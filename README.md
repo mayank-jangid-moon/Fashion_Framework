@@ -1,37 +1,37 @@
-# Fashion AI System 👗🤖
+# AI Based Fashion Framework
 
 A comprehensive AI-powered fashion system that combines virtual try-on, fashion recommendation, neural style transfer, color analysis, and preprocessing capabilities. This system provides end-to-end fashion solutions from image preprocessing to personalized recommendations.
 
-## 🌟 Key Features
+## Key Features
 
-### 🔄 Virtual Try-On (SCW-VTON)
+### Virtual Try-On (SCW-VTON)
 - **Shape-Guided Clothing Warping**: State-of-the-art virtual try-on using the SCW-VTON model
 - **Paired/Unpaired Modes**: Try on original clothing or different items
 - **High-Quality Results**: Realistic clothing warping and person synthesis
 - **VITON-HD Compatible**: Works with VITON-HD datasets
 
-### 🎯 Fashion Recommendation System
+### Fashion Recommendation System
 - **Text-to-Fashion Search**: Find clothing items using natural language descriptions
 - **Image-to-Fashion Search**: Upload clothing images to find similar items
 - **FashionCLIP Integration**: Uses state-of-the-art fashion-specific CLIP model
 - **FAISS-Powered**: Lightning-fast similarity search with vector indexing
 - **Multi-modal Queries**: Combine text and image searches
 
-### 🎨 Neural Style Transfer
+### Neural Style Transfer
 - **Fashion Style Transfer**: Apply artistic styles to clothing images
 - **Customizable Parameters**: Adjustable iterations, weights, and quality settings
 - **Background Removal**: Optional transparent backgrounds using rembg
 - **VGG19-Based**: Professional-quality artistic transformations
 - **Real-time Processing**: Optimized for interactive use
 
-### 🌈 Personal Color Analysis
+### Personal Color Analysis
 - **Seasonal Color Matching**: Determines whether you're Spring, Summer, Autumn, or Winter
 - **Skin Tone Analysis**: Uses ResNet-based deep learning for accurate classification
 - **Lip Color Extraction**: Analyzes facial features for personalized recommendations
 - **Color Palette Generation**: Provides matching clothing color suggestions
 - **Fashion Integration**: Links color analysis to clothing recommendations
 
-### ⚙️ Comprehensive Preprocessing Pipeline
+### Comprehensive Preprocessing Pipeline
 - **Multi-Stage Processing**: Complete fashion image preprocessing workflow
 - **DensePose Integration**: Human pose and shape estimation
 - **OpenPose Support**: Skeletal pose detection and JSON generation
@@ -39,14 +39,14 @@ A comprehensive AI-powered fashion system that combines virtual try-on, fashion 
 - **Mask Generation**: Agnostic masks, cloth masks, and binary segmentation
 - **Background Removal**: Professional cloth mask creation
 
-### 🌐 Web Interface
+### Web Interface
 - **Streamlit Dashboard**: User-friendly web interface for all features
 - **Multi-Environment Architecture**: Isolated conda environments for optimal performance
 - **Real-time Processing**: Interactive experience with progress tracking
 - **Responsive Design**: Works on desktop and mobile devices
 - **Professional UI**: Clean, intuitive interface with custom styling
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 Fashion AI System
@@ -77,7 +77,7 @@ Fashion AI System
     └── Real-time Processing
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - **Python 3.8+**
@@ -151,7 +151,7 @@ streamlit run app.py
 
 Visit `http://localhost:8501` in your browser!
 
-## 📖 Detailed Usage
+## Detailed Usage
 
 ### Virtual Try-On
 ```bash
@@ -206,7 +206,7 @@ cd Colour_Analysis
 python main.py --input face_photo.jpg --output color_analysis.json
 ```
 
-## 🎛️ Configuration
+## Configuration
 
 ### Environment Variables
 ```bash
@@ -231,21 +231,7 @@ textColor = "#262730"
 maxUploadSize = 200
 ```
 
-## 📊 Performance & Requirements
-
-### Hardware Requirements
-- **Minimum**: 8GB RAM, Intel i5 or equivalent
-- **Recommended**: 16GB+ RAM, NVIDIA GTX 1080+ or RTX series
-- **Storage**: 20GB+ free space (including models and datasets)
-
-### Performance Metrics
-- **Virtual Try-On**: ~10-30 seconds per image pair (GPU)
-- **Fashion Search**: <2 seconds per query
-- **Style Transfer**: 30 seconds - 5 minutes (depending on iterations)
-- **Color Analysis**: 2-5 seconds per face photo
-- **Preprocessing**: 1-3 minutes per person image
-
-## 🧪 Testing
+## Testing
 
 ### Run Individual Tests
 ```bash
@@ -270,7 +256,7 @@ cd SCW-VTON
 python metrics.py  # Evaluates FID, SSIM, LPIPS scores
 ```
 
-## 🛠️ Development
+## Development
 
 ### Project Structure
 ```
@@ -295,19 +281,6 @@ Fashion_Shit/
 └── Dataset/                # Training/test data
 ```
 
-### Adding New Features
-1. **Create Service Module**: Add new `*_service.py` in `Streamlit/`
-2. **Environment Setup**: Create `setup_*_env.sh` script
-3. **Web Integration**: Add new tab/section in `app.py`
-4. **Testing**: Create corresponding `test_*.py` file
-
-### Contributing
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests and documentation
-5. Submit a pull request
-
 ## 📚 Research & Citations
 
 This project combines several state-of-the-art research works:
@@ -330,43 +303,6 @@ This project combines several state-of-the-art research works:
 ### Neural Style Transfer
 - Based on Gatys et al. "A Neural Algorithm of Artistic Style"
 - Uses VGG19 for feature extraction and style transfer
-
-## 🤝 Related Projects
-
-- **[PL-VTON](https://github.com/xyhanHIT/PL-VTON)** - Progressive Limb-Aware Virtual Try-On
-- **[GP-VTON](https://github.com/xiezhy6/GP-VTON)** - Garment-Person Virtual Try-On 
-- **[DCI-VTON](https://github.com/bcmi/DCI-VTON-Virtual-Try-On)** - Disentangled Cycle-consistent Virtual Try-On
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-#### Virtual Try-On Not Working
-- Ensure CUDA is available: `nvidia-smi`
-- Check GPU memory: Reduce batch size if OOM errors
-- Verify model checkpoints are downloaded correctly
-
-#### Fashion Search Returns No Results
-- Build FAISS index first: `cd Recommender/FashionCLIP && python build_index.py`
-- Check image paths in database
-- Ensure FashionCLIP environment is properly set up
-
-#### Style Transfer Takes Too Long
-- Reduce iterations (try 50-100 instead of 500)
-- Use smaller images (resize to 512x512)
-- Ensure TensorFlow is using GPU acceleration
-
-#### Color Analysis Fails
-- Check face visibility in uploaded photos 
-- Ensure good lighting conditions
-- Verify ResNet model file exists
-
-### Getting Help
-1. Check the console output for detailed error messages
-2. Ensure all required models are downloaded
-3. Verify conda environments are properly configured
-4. Check file permissions and paths
-5. Review the troubleshooting sections in individual component READMEs
 
 ## 👥 Team
 1. Mayank Jangid
