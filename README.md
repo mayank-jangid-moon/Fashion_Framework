@@ -307,7 +307,7 @@ This project combines several state-of-the-art research works:
 ## Team
 1. Mayank Jangid
 2. Abhinav Rajput
-3. Odwitiyo
+3. Odwitiyo Dutta
 
 
 
